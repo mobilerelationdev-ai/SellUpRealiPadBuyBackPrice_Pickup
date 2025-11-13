@@ -16,7 +16,7 @@ credentials = Credentials.from_service_account_file(
     SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 gc = gspread.authorize(credentials)
 spreadsheet = gc.open_by_key(SPREADSHEET_ID)
-worksheet = spreadsheet.worksheet('Used Buyback Prices - iPad')
+worksheet = spreadsheet.worksheet('Used Buyback Prices - iPad - Pick up')
 
 # ---------- 数据抓取 ----------
 with open('products.json', 'r') as f:
